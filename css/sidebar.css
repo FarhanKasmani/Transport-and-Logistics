@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+.global-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.global-wrapper .symbol{
+  color: #ffffff;
+}
+.global-wrapper aside {
+  position: relative;
+  width: 58px;
+  float: left;
+  text-align: center;
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+  border: 1px solid silver;
+  background-color: #0a1d3d;
+}
+.global-wrapper aside ul {
+  list-style: none;
+  padding-left: 0;
+}
+.global-wrapper aside ul li {
+  padding: 20px 0 10px 0;
+  cursor: pointer;
+}
+/* .global-wrapper aside ul li:hover {
+  color: #ffffff;
+} */
+.global-wrapper aside ul li:hover i .nav-item {
+  color: #ffffff;
+}
+.global-wrapper aside ul li:hover .nav-item {
+  color: #ffffff;
+}
+/* 0FA0EB */
+.global-wrapper aside ul li .nav-item {
+  display: inline-block;
+  width: 20px;
+  overflow: hidden;
+  height: 20px;
+  transition: width 0.3s ease-in-out;
+  white-space: nowrap;
+  color: #949599;
+}
+.global-wrapper aside ul li .nav-item i {
+  float: left;
+  position: relative;
+  top: -3px;
+  font-size: 20px;
+}
+/* 858E99 */
+.global-wrapper aside ul li .nav-item span {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.global-wrapper aside ul .active {
+  border-left: 4px solid #ffffff;
+  color: ghostwhite;
+}
+/* 0FA0EB */
+.global-wrapper aside ul .active i {
+  color: #ffffff !important;
+}
+.global-wrapper aside ul .active span {
+  color: #ffffff !important;
+}
+.global-wrapper aside ul:nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.global-wrapper #main {
+  float: left;
+  width: calc(100% - 60px);
+  height: 100%;
+  overflow: scroll;
+  transition: all 0.3s ease-in-out;
+}
+.global-wrapper #main #blackout-on-hover {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.global-wrapper aside:hover {
+  width: 300px;
+  transition: all 0.3s ease-in-out;
+}
+.global-wrapper aside:hover .nav-item {
+  display: inline-block;
+  width: 150px;
+  overflow: hidden;
+  height: 20px;
+}
+.global-wrapper aside:hover .nav-item i {
+  float: left;
+}
+.global-wrapper aside:hover .nav-item span {
+  opacity: 1;
+}
+.global-wrapper aside:hover ~ #main {
+  width: calc(100% - 302px);
+  transition: all 0.3s ease-in-out;
+}
+.global-wrapper aside:hover ~ #main #blackout-on-hover {
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Navbar container */
+.upperbar {
+  /* margin-left: 54px; */
+  overflow: hidden;
+  background-color: #ffffff;
+  font-family: Arial;
+  height: 51px;
+  display: block;
+}
+
+.upperbar a {
+  float: left;
+  font-size: 16px;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}

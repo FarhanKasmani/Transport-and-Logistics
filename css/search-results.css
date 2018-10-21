@@ -1,0 +1,23 @@
+body {
+  margin:0;
+  background-color: #edeef2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+td {
+    border: none; /* Remove borders */
+    padding: 16px; /* Some padding */
+    cursor: pointer; /* Mouse pointer on hover */
+    font-size: 16px;
+}
+
+.page {
+  height: 500px;
+}
+
+.color-star {
+  color: yellow;
+}

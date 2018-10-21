@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap-iso.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="css/sidebar.css">
+</head>
+<body style="background-color: #edeef2;">
+  <section class='global-wrapper' ng-controller="ctrl">
+		<aside>
+			<h1 class="symbol">T</h1>
+			<ul>
+				<li class="active">
+          <a href="index.html">
+            <div class="nav-item">
+              <i class="fa fa-home"></i>
+  						<span>Home</span>
+  					</div>
+          </a>
+				</li>
+				<li>
+          <a href="userDash.html">
+            <div class="nav-item">
+  						<i class="fa fa-truck"></i>
+  						<span>Book Truck</span>
+  					</div>
+          </a>
+				</li>
+        <li>
+          <a href="profile.html">
+            <div class="nav-item">
+  						<i class="fa fa-user"></i>
+  						<span>Profile</span>
+  					</div>
+          </a>
+				</li>
+			</ul>
+
+			<!--bottom nav -->
+			<ul>
+				<li>
+					<div class="nav-item">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</div>
+				</li>
+			</ul>
+		</aside>
+
+		<div id="main">
+      <div id="blackout-on-hover"></div>
+      <div class="upperbar">
+        <a href="#news"><strong>Dashboard</strong></a>
+        <a style="margin-left:380px;color:#858585;">Current Bookings</a>
+      </div>
+      <div class="page">
+        <div class="bootstrap-iso" style="background-color:#edeef2">
+            <div class="container">
+              <div class="row my-5">
+                <div class="col">
+                  <table class="table bg-white shadow p-3 mb-4 bg-white rounded">
+                    <thead style="background-color: #0a1d3d; color: #ffffff;">
+                      <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link type="text/css" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+  <link rel="stylesheet" href="css/sidebar.css">
+  <link rel="stylesheet" href="css/userDash.css">
+</head>
+
+<body>
+	<section class='global-wrapper' ng-controller="ctrl">
+		<aside>
+			<h1 class="symbol">T</h1>
+      <ul>
+				<li>
+          <a href="index.html">
+            <div class="nav-item">
+              <i class="fa fa-home"></i>
+  						<span>Home</span>
+  					</div>
+          </a>
+				</li>
+				<li class="active">
+          <a href="userDash.html">
+            <div class="nav-item">
+  						<i class="fa fa-truck"></i>
+  						<span>Book Truck</span>
+  					</div>
+          </a>
+				</li>
+        <li>
+          <a href="profile.html">
+            <div class="nav-item">
+  						<i class="fa fa-user"></i>
+  						<span>Profile</span>
+  					</div>
+          </a>
+				</li>
+			</ul>
+
+			<!--bottom nav -->
+      <ul>
+				<li>
+					<div class="nav-item">
+						<i class="fa fa-sign-out"></i>
+						<span>Logout</span>
+					</div>
+				</li>
+			</ul>
+		</aside>
+
+		<div id="main">
+      <div id="blackout-on-hover"></div>
+      <div class="upperbar">
+        <a href="#news"><strong>Dashboard</strong></a>
+      </div>
+      <div class="page">
+        <div class="row shadow">
+          <div class="column heading1">
+            <strong>Search trucks</strong>
+          </div>
+        </div>
+        <div class="row shadow">
+          <form class="example" action="search-results.html" method="post">
+            <div class="column middle">
+              <div class="input-container">
+                <input class="input-field" id="autocomplete1" type="text" placeholder="Enter Source" name="usrnm">
+              </div>
+              <div class="input-container">
+                <i class="fa fa-bus icon" aria-hidden="true"></i>
+                <div class="custom-select" >
+                  <select>
+                    <option value="0">Select Truck:</option>
+                    <option value="1">Eicher 14 feet</option>
+                    <option value="2">Eicher 19 feet</option>
+                    <option value="3">Eicher 17 feet</option>
+                    <option value="4">20 feet closed container / 6.5 ton</option>
+                    <option value="5">9 ton / 6 wheel</option>
+                    <option value="6">16 ton / 10 wheel</option>
+                    <option value="7">21 ton / 12 wheel</option>
+                    <option value="8">25 ton / 14 wheel</option>
+                    <option value="9">32 feet single axle / 7 ton</option>
+                    <option value="10">32 feet multi axle / 14.5 ton</option>
+                    <option value="11">20 feet trailer</option>
+                    <option value="12">40 feet trailer</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="column middle">
+              <div class="input-container">
+                <input class="input-field" id="autocomplete2" type="text" placeholder="Enter Destination" name="usrnm">
+              </div>
+              <input type="hidden" id="autocomplete1-city" name="source-city" value="">
+              <input type="hidden" id="autocomplete2-city" name="destination-city" value="">
+              <button type="submit" class="btn searchbtn"><i class="fa fa-search"></i> Search</button>
+            </div>
+          </form>
+        </div>
+        <div class="row shadow">
+          <div id="map"></div>
+          <div id="content"></div>
+        </div>
+      </div>
+		</div>
+	</section>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCR_xNH5wglimHCE7hFYjYDJzp7uy0zuQ0&libraries=places&callback=initAutocomplete" async defer></script>
+  <script type="text/javascript" src="js/userDash.js"></script>
+</body>
+</html>
+<!-- <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular.min.js'></script> -->
